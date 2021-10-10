@@ -1,0 +1,135 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://OptionButton.gd" type="Script" id=1]
+[ext_resource path="res://Button.gd" type="Script" id=2]
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+margin_left = 65.0
+margin_top = 65.0
+margin_right = 165.0
+margin_bottom = 80.0
+rect_scale = Vector2( 2, 2 )
+text = "Variables"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="."]
+margin_left = 65.0
+margin_top = 165.0
+margin_right = 245.0
+margin_bottom = 180.0
+rect_scale = Vector2( 2, 2 )
+text = "Number of Trials - eg: 2"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RichTextLabel3" type="RichTextLabel" parent="."]
+margin_left = 65.0
+margin_top = 265.0
+margin_right = 465.0
+margin_bottom = 280.0
+rect_scale = Vector2( 2, 2 )
+text = "Benefit for each trial - Values between 0 and 15 - eg: 3,3"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RichTextLabel5" type="RichTextLabel" parent="."]
+margin_left = 65.0
+margin_top = 365.0
+margin_right = 465.0
+margin_bottom = 380.0
+rect_scale = Vector2( 2, 2 )
+text = "Cost for each trial - Values between 0 and 15 - eg: 9,13"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RichTextLabel6" type="RichTextLabel" parent="."]
+margin_left = 65.0
+margin_top = 465.0
+margin_right = 455.0
+margin_bottom = 495.0
+rect_scale = Vector2( 2, 2 )
+text = "Probability of partner sharing - Integers between 0 and 100 - eg: 30,50"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="OptionButton" type="OptionButton" parent="."]
+margin_left = 100.0
+margin_top = 100.0
+margin_right = 129.0
+margin_bottom = 120.0
+rect_scale = Vector2( 2, 2 )
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="."]
+margin_left = 850.0
+margin_top = 500.0
+margin_right = 900.0
+margin_bottom = 520.0
+rect_scale = Vector2( 2, 2 )
+text = "START"
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="SpinBox" type="SpinBox" parent="."]
+margin_left = 100.0
+margin_top = 200.0
+margin_right = 174.0
+margin_bottom = 224.0
+rect_scale = Vector2( 2, 2 )
+min_value = 1.0
+value = 1.0
+
+[node name="LineEdit" type="LineEdit" parent="."]
+margin_left = 100.0
+margin_top = 300.0
+margin_right = 300.0
+margin_bottom = 324.0
+rect_scale = Vector2( 2, 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LineEdit2" type="LineEdit" parent="."]
+margin_left = 100.0
+margin_top = 400.0
+margin_right = 300.0
+margin_bottom = 424.0
+rect_scale = Vector2( 2, 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LineEdit3" type="LineEdit" parent="."]
+margin_left = 100.0
+margin_top = 530.0
+margin_right = 300.0
+margin_bottom = 554.0
+rect_scale = Vector2( 2, 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RichTextLabel4" type="RichTextLabel" parent="."]
+margin_left = 400.0
+margin_right = 700.0
+margin_bottom = 120.0
+rect_scale = Vector2( 2, 2 )
+[connection signal="pressed" from="Button" to="Button" method="_on_Button_pressed"]
